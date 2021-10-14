@@ -63,20 +63,7 @@ public class Decimal_a_Romano {
       }
 
       //decenas
-      if (decenas == 9) {
-          romano = romano + "XC";
-      } else if (decenas >= 5) {
-                 romano = romano + "L";
-                 for (i = 6; i <= decenas; i++) {
-                      romano = romano + "X";
-                 }
-      } else if (decenas == 4) {
-                 romano = romano + "XL";
-      } else {
-                 for (i = 1; i <= decenas; i++) {
-                      romano = romano + "X";
-                 }
-      }
+ 
 
       //unidades
       if (unidades == 9) {
