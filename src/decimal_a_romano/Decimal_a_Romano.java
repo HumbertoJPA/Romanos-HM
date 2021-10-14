@@ -41,8 +41,12 @@ public class Decimal_a_Romano {
       decenas = numero / 10 % 10;
       unidades = numero % 10;
 
-  
-      //centenas 
+      //millar
+      for (i = 1; i <= miles; i++) {
+             romano = romano + "M";
+      }
+
+      //centenas
       if (centenas == 9) {
           romano = romano + "CM";
       } else if (centenas >= 5) {
