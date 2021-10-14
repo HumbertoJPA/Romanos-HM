@@ -29,7 +29,7 @@ public class Decimal_a_Romano {
              System.out.print("Introduce un número decimal porfavor: ");
              N = sc.nextInt();
       } while (N < 1 || N > 3999);
-      System.out.println(N + " en numeros romanos corresponde a: " + convertirANumerosRomanos(N));                            
+      System.out.println("El numero " + N + " convertido en numeros romanos corresponde a: " + convertirANumerosRomanos(N));                            
   }
 
   //método para pasar a números romanos
