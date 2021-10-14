@@ -7,6 +7,8 @@ package decimal_a_romano;
 
 /**
  *
+ * 
+ * 
  * @author Humberto
  * Equipo conformado por: 
  * Coria Lopez Josue Macrin
@@ -41,8 +43,30 @@ public class Decimal_a_Romano {
       decenas = numero / 10 % 10;
       unidades = numero % 10;
 
-  
-       //decenas
+
+      // abano estan los cambios
+      //millar
+      for (i = 1; i <= miles; i++) {
+             romano = romano + "M";
+      }
+
+      //centenas
+      if (centenas == 9) {
+          romano = romano + "CM";
+      } else if (centenas >= 5) {
+                 romano = romano + "D";
+                 for (i = 6; i <= centenas; i++) {
+                      romano = romano + "C";
+                 }
+      } else if (centenas == 4) {
+                 romano = romano + "CD";
+      } else {
+                 for (i = 1; i <= centenas; i++) {
+                      romano = romano + "C";
+             }
+      }
+
+      //decenas
       if (decenas == 9) {
           romano = romano + "XC";
       } else if (decenas >= 5) {
@@ -57,6 +81,7 @@ public class Decimal_a_Romano {
                       romano = romano + "X";
                  }
       }
+ 
 
       //unidades
       if (unidades == 9) {
